@@ -21,11 +21,13 @@ do
     cp $CDIR/$f $build_dir/
 done
 
-portable_url='https://github.com/BurntSushi/ripgrep/releases/download/13.0.0/ripgrep-13.0.0-x86_64-unknown-linux-musl.tar.gz'
-extra_url='https://github.com/eth-p/bat-extras/releases/download/v2021.08.21/bat-extras-20210821.zip'
+# portable_url='https://github.com/BurntSushi/ripgrep/releases/download/13.0.0/ripgrep-13.0.0-x86_64-unknown-linux-musl.tar.gz'
+portable_url='https://github.com/BurntSushi/ripgrep/releases/download/14.0.3/ripgrep-14.0.3-x86_64-unknown-linux-musl.tar.gz'
+# extra_url='https://github.com/eth-p/bat-extras/releases/download/v2021.08.21/bat-extras-20210821.zip'
+extra_url='https://github.com/eth-p/bat-extras/releases/download/v2023.09.19/bat-extras-202309.19.zip'
 tarname=`basename $portable_url`
 zipname=`basename $extra_url`
-foldername='ripgrep-13.0.0-x86_64-unknown-linux-musl'
+foldername='ripgrep-14.0.3-x86_64-unknown-linux-musl'
 zipfolder='bat-extras'
 
 cd $build_dir
